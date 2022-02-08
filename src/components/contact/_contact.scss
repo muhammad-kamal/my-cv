@@ -16,6 +16,7 @@
     position: relative;
     width: 60%;
     color: white;
+    overflow: auto;
 }
 
 .contactIcon{
@@ -122,7 +123,7 @@
 
 @media (max-width : 770px){
     .contact{
-        height: 145vh;
+        height: 256vh;
     }
 }
 
