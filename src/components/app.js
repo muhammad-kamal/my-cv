@@ -4,7 +4,6 @@ import Skills from "./skills/skills"
 import Personal from "./personal/personal";
 import Contact from "./contact/contact";
 import ScrollBtn from "./scrollButton/scrollBtn";
-import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 
