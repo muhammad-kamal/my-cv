@@ -1,5 +1,9 @@
 import React from "react";
 import "./_hobbies.css";
+import PoolIcon from '@mui/icons-material/Pool';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
+import LocalMoviesIcon from '@mui/icons-material/LocalMovies';
 
 function Hobbies() {
   return (
@@ -8,19 +12,19 @@ function Hobbies() {
         <div className="uptofront">
           <div className="row justify-content-center">
             <div className="col-md-5  m-3 text-center h3">
-              <i className="fas fa-swimmer fa-2x iconI"></i>
+              <PoolIcon className="iconI"/>
               <div>Swimming</div>
             </div>
             <div className="col-md-5  m-3 text-center h3">
-              <i className="fas fa-gamepad fa-2x iconI"></i>
+             <SportsEsportsIcon className="iconI"/>
               <div>Video games</div>
             </div>
             <div className="col-md-5  m-3 text-center h3">
-              <i className="far fa-futbol fa-2x iconI"></i>
+              <SportsSoccerIcon className="iconI"/>
               <div>Soccer</div>
             </div>
             <div className="col-md-5  m-3 text-center h3">
-              <i className="fas fa-video fa-2x iconI"></i>
+              <LocalMoviesIcon className="iconI"/>
               <div>Watching shows</div>
             </div>
           </div>

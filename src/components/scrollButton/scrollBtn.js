@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./_scrollBtn.css";
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 function ScrollBtn() {
   const [toggleV, settoggleV] = useState(false);
@@ -24,7 +25,9 @@ function ScrollBtn() {
 
   return (
     <div>
-      <button style={{display : toggleV ? "block" : "none"}} onClick={scrollTop} className="upBtn">UP</button>
+      <button style={{display : toggleV ? "block" : "none"}} onClick={scrollTop}>
+         <ArrowCircleUpIcon  className="upBtn" />
+      </button>
     </div>
   );
 }
