@@ -1,27 +1,31 @@
 import React, { useState, useEffect } from "react";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import "./_contact.css";
 import "animate.css";
-
-
 
 function Contact() {
   const [val, setVal] = useState(false);
 
-window.addEventListener("scroll", () => {
-    if(window.scrollY >= 2100){
-        setVal(true)
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= 2100) {
+      setVal(true);
     }
-})
+  });
 
-useEffect(() => {
-    if(val){
-        document.getElementById("TL").classList.add("animate__zoomInLeft");
-        document.getElementById("TR").classList.add("animate__zoomInRight");
-        document.getElementById("BL").classList.add("animate__zoomInUp");
-        document.getElementById("BR").classList.add("animate__zoomInUp");
-        document.getElementById("Licons").classList.add("animate__wobble")
+  useEffect(() => {
+    if (val) {
+      document.getElementById("TL").classList.add("animate__zoomInLeft");
+      document.getElementById("TR").classList.add("animate__zoomInRight");
+      document.getElementById("BL").classList.add("animate__zoomInUp");
+      document.getElementById("BR").classList.add("animate__zoomInUp");
+      document.getElementById("Licons").classList.add("animate__wobble");
     }
-},[val])
+  }, [val]);
 
   return (
     <div id="Contact" className="contact">
@@ -35,15 +39,15 @@ useEffect(() => {
           className="contactInfo lead animate__animated  animate__slow"
         >
           <div className="d-flex">
-            <i className="fas fa-home contactIcon"></i>
+            <HomeIcon className="contacticon" />
             <div className="p-2">Address : Damascus - Elzahera Eljadeda</div>
           </div>
           <div className="d-flex">
-            <i className="fas fa-phone contactIcon"></i>
+           <LocalPhoneIcon className="contacticon" />
             <div className="p-2">PHONE : +963941837617</div>
           </div>
           <div className="d-flex">
-            <i className="fas fa-envelope-open contactIcon"></i>
+            <MailIcon className="contacticon" />
             <div className="p-2">Email : Muhammad.Kamal.RA@gmail.com</div>
           </div>
         </div>
@@ -69,18 +73,23 @@ useEffect(() => {
         <div className="contactLinks d-flex justify-content-center">
           <ul id="Licons" className="list-unstyled d-flex animate__animated ">
             <li>
-              <a href="mailTo : Muhammad.Kamal.RA@gmail.com">
-                <i className="fab fa-google lastI"></i>
+              <a href="https://www.linkedin.com/in/muhammad-kamal-al-quwatli-3b6111226/">
+                  <LinkedInIcon className="last" />
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/mhamad.kamal.980/">
-                <i className="fab fa-facebook-f lastI"></i>
+                <FacebookOutlinedIcon className="last" />
               </a>
             </li>
             <li>
               <a href=" https://github.com/muhammad-kamal/My-Projects">
-                <i className="fab fa-github lastI"></i>
+              <GitHubIcon className="last" />
+              </a>
+            </li>
+            <li>
+              <a href="mailto : Muhammad.Kamal.RA@gmail.com">
+                 <MailIcon className="last" />
               </a>
             </li>
           </ul>

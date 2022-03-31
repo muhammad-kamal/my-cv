@@ -27,6 +27,11 @@
     color: $vinous;
 }
 
+.contacticon{
+    color: $vinous;
+    margin: 10px;
+}
+
 .contactInfo::before{
     position: absolute;
     content: "";
@@ -102,28 +107,28 @@
     width: 100%;
 }
 
-.lastI{
+
+.last{
     margin: 100px 20px;
-    font-size: 80px;
+    width: 60px !important;
+    height: 60px !important;
     color: #f7ac17;
-    padding: 2px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     border: 2px solid;
-    padding: 9px;
-    transition: 1.5s;
+    border-radius: 50%;
+    transition: 1.5s !important;
 }
 
-.lastI:hover{
+.last:hover{
     color: $mainColor;
     background-color: $vinous;
 }
 
 
+
+
 @media (max-width : 770px){
     .contact{
-        height: 256vh;
+        height: 266vh;
     }
 }
 

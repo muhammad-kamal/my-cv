@@ -8,7 +8,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 function Personal() {
   return (
     <BrowserRouter>
-      <div id="personal" className="secBackground">
+      <div id="personal" className="persSec">
         <div className="h1 fitContent  title personalTitle">PERSONAL INFO</div>
         <PersonalNav />
         <Routes>
